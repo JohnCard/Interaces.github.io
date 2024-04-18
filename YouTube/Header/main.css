@@ -1,0 +1,100 @@
+body {
+    font-family: "Press Start 2P", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --- header --- */
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+/* --- Main icons --- */
+
+.icons{
+  display: flex;
+  height: 60px;
+  width: 200px;
+  margin: 1%;
+  justify-content: space-evenly;
+}
+
+/* --- Main icons end --- */
+
+/* --- Search --- */
+
+.search{
+  display: flex;
+  margin: 1% 0;
+  width: 450px;
+}
+
+.search-text{
+  font-family: "Press Start 2P", sans-serif;
+  padding: 20px;
+  border-radius: 40px 0 0 40px;
+  width: 300px;
+  height: 15px;
+}
+
+.lupa{
+  border-radius: 0 50% 50% 0;
+  height: 60px;
+}
+
+.lupa-image{
+  width: 40px;
+  border-radius: 50%;
+}
+[alt="Microphone"]{
+  height: 20px;
+  margin: 6px 15px;
+  width: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+
+/* --- Search end --- */
+
+/* --- Final icons --- */
+
+.final-icons{
+  margin: 1% 0;
+  display: flex;
+  gap: 15px;
+  width: 210px;
+}
+
+.points{
+  align-self: center;
+}
+
+.points,.log-in{
+  height: 40px;
+  width: 40px;
+}
+
+.acces{
+  display: flex;
+  height: 20px;
+  width: 120px;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 10px 20px 25px 10px;
+  gap: 10px;
+}
+
+.log-text{
+  margin: 10px 5px;
+}
+
+.log-in{
+  border-radius: 50%;
+}
+
+/* --- Final icons end --- */
+
+/* --- header end --- */

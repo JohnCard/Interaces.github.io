@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+body,div{
+    box-sizing: border-box;
+}
+
+.short{
+    width: 250px;
+    display: inline-block;
+    list-style: none;
+}
+
+.short-d{
+    font-size: 10px;
+    line-height: 15px;
+    width: 250px;
+}
+
+.fond{
+    height: 400px;
+    border-radius: 25px;
+    width: 250px;
+}
+
+.span-v{
+    font-size: 10px;
+}
