@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+div, body{
+    box-sizing: border-box;
+}
+
+/*
+en cuanto al margin, sigue existiendo ese problema del colapsado
+*/
+
+.flexbox{
+    /* padding: ; */
+    display: flex;
+    /* flex-direction: row; */
+    /* direction: ltr; */
+
+    /* colapsa con flex-shrink
+    flex-wrap: wrap; */
+    /* height: ; */
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+
+    /*
+    it'll collapse against overflow-hidden
+    */
+    height: 300px;
+    
+    /*
+    Esta propiedad es para muchas lineas en el eje principal (colapsa con align-content y align-items)
+    justify-content: space-evenly; 
+    */
+
+    /* para   muchas lineas en el eje cruzado
+    colapsa con align-items y justify-content
+    */
+    align-content: start; 
+
+    /*
+    Esta es para una sol a linea en el eje cruzado
+    (colapsa con align-content y justify-content)
+    align-items: start;  
+    */
+   
+    /* gap: 20px; */
+    
+    /* it'll collapse against height property
+     overflow: hidden; */
+}
+
+.flex-item{
+    /*
+    Cuando los elementos cuentan con padding, dejarán de crecer 
+    padding: ; 
+    */
+
+    /* esta colapsa un poco con flex-grow
+     width: ; */
+
+    /*
+    Cuando cuentan con width, estos dejarán de ocupar todo el espacio de la flex caja 
+    width: 100px; 
+    */
+
+    /*
+    this one will collapse against the width property, because this define a base size for every html elements in our flex box container, almost equals to say min-width or min-height, but instad both min-height or min-width, it'll be better to write the flex-basis!!!
+    */
+    flex-basis: 150px;
+
+    /*
+    La propiedad de flex-basis en el caso de flex-flow: column wrap, es como si aplicaras min-height, pero en el caso de usar flex-flow: row wrap, es como si aplicarás min-width.
+    */
+    /* min-width: 150px; */
+    background-color: #800;
+    /* margin: auto; */
+    color: #fff;
+    font-size: 40px;
+    /*
+    que te permite centrar el contenido del texto en el elemento item en especifico
+    */
+    text-align: center;
+    /* direction: rtl; */
+    /* height: 50px; */
+    /* order: 3; */
+    /* esta propiedad colapsa un poco con width
+    flex-grow: 1; */
+
+    /* colapsa con flex-wrap,
+    esta propiedad da a entender al elemento cuanto se encojerá en comparación a otros elementos, mientras mayor sea su cifra, mas se encojerá 
+    flex-shrink: 1; */
+    /*
+
+    We have the flex property, that will allow us to
+    indicate 3 properties self-time, we are talking about the flex-grow, flex-shrink and flex-basis, in that same order.
+    */
+    flex: 1 1 200px;
+
+}
+
+.flex-item:nth-child(2n){
+    background-color: #f77;
+    /* flex-grow: 2; */
+    /* max-width: 200px; */
+    /* order: 1; */
+    /* flex-shrink: 0; */
+    /* height: ;
+    font-size: ; */
+}
+
+.flex-item:last-child{
+    background-color: #000;
+    /* order: -1; */
+    /* flex-grow: 3; */
+    /* flex-shrink: 0; */
+    /* font-size: ; */
+}
+
+.seven{
+    /*
+    it is worth mentioning, this property just w¿gonna works just when in the box-father, we are using align-items instead align-content, because it'll colapse against align-content
+    */
+    align-self: stretch;
+}

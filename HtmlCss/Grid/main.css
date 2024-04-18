@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #999;
+}
+body,div{
+    box-sizing: border-box;
+}
+.grid{
+    display: grid;
+    /*
+    when we add the predifined height for our grid elemnt html, our grid size will abjust for the size of this one, but when we don´t specify this property, the grid size will just adjust for the size of the content
+    */
+
+    /* when we specify a size for each row, this ones will have their own height, but times when we're not specific with 
+    this property for each row, the height for each row we don´t specify it's own height, this one will just adjust 
+    the size or height for the .grid element father
+    height: 80vh; */
+
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-rows: 150px 130px; */
+    /* direction: rtl; */
+
+    /* the auto property adds some leftover space to another elements
+    grid-template-columns: auto auto 200px; */
+    /* grid-template-rows: 150px 130px; */
+
+    /* min-content will adjust the grid-item for the xontent written within this one
+     grid-template-columns: min-content min-content 200px; 
+     grid-template-rows: 150px 130px; 
+    */
+
+    /* No problem when we add more colums */
+    /* grid-template-columns: 200px repeat(3,100px) 200px; */
+    /* grid-template-rows: 100px 100px; */
+
+    /* Repeating patterns */
+    /* grid-template-columns: repeat(2, 70px 90px);
+    grid-template-rows: 100px 100px; */
+
+    /*
+    DO NOT forget the "fr" measure property
+    Because is that one which divs the whole space or gap between the numbers, for instance: 
+    "1fr 2fr 3fr" : 6fr
+    */
+
+    /* Working with ranges */
+    /* minmax property is used to work with the fr measure
+    grid-template-columns: 100px 100px minmax(90px,110px);
+    grid-template-rows: 100px 100px 100px; */
+
+    /* minmax in the repeat function */
+    /* grid-template-columns: repeat(2, minmax(100px, 300px)) 1fr;
+    grid-template-rows: repeat(2,200px) 1fr; */
+
+    /*
+    Grid Ímplicito y Éxplicito:
+    */
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,200px); */
+
+    /*
+    About this properties:
+    when we're crafting new rows and columns and their sizes are not written in grid-template-columns or 
+    grid-template-rows, this will help add them an specific height and width
+    */
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+
+    /*
+    this property will specify the way new rows will be added onto our grid box
+    grid-auto-flow: row;
+    Exist the dense, row and column varieties
+    dense variety will auto fill in the blank spaces where there's no items
+    */
+
+    /*
+    gap
+    */
+    /* column-gap: 10px;
+    row-gap: 20px; */
+
+    /*
+    the gap property will sumary both row and column:
+    */
+    gap:10px 8px;
+
+    /* padding: 10px; */
+    /* margin: auto; */
+    /* margin-top: ; */
+    border: 3px solid black;
+
+    /*
+    While the auto-fit property will abjust sizes for each html element, the auto-fill will be adding more columns.
+    This property could collapse against the grid-auto-flow, depending on we're working with columns and rows.
+    Difference between auto-fill and auto-fit will be found when you use just few items in your grid box (2-3
+    elements), because when we use several, both properties (auto-fit and auto-fill) will react same way.
+
+    Now, in case using several elements (like over 15 or 20 just for instance, and using the grid-template-columns)
+    like next example:
+    */
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    /* this one will adding a new column or row according the situation if exist an 150px space */
+    /* grid-template-rows: repeat(3,200px); */
+}
+
+.grid-item{
+    /* this one could collapse against gap property in the grid father
+     margin: 10px; */
+    /*
+    this one will collapse against the grid property 
+    display: inline-block; */
+    background-color: #48e;
+    font-size: 30px;
+    /* max-width: 100%; */
+    /* width: 45%; */
+    /* display: inline; */
+    /* border-radius: 16px; */
+    /* border: 2px solid black; */
+    /* padding: ; */
+}
+
+/* .grid-item:first-child{
+    width: 100px;
+    This is just the size for the child element, no for the reserved size for this.
+} */
+
+.grid-item:hover{
+    opacity: .74;
+}

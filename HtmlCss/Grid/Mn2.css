@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #999;
+}
+body,div{
+    box-sizing: border-box;
+}
+.grid{
+    display: grid;
+    /*
+    when we add the predifined height for our grid elemnt html, our grid size will abjust for the size of this one, but when we don´t specify this property, the grid size will just adjust for the size of teh content
+    */
+    min-height: 200vh;
+    
+}
+.grid-item{
+    background-image: url('https://www.clarin.com/img/2021/12/03/L-DV5IzJN_2000x1500__1.jpg');
+    font-size: 30px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+/*
+Let´s indicate the positions for each html element
+*/
+
+/* .grid-item:first-child{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 3;
+    grid-row-end: 3;
+} */
+
+/*
+You could do a better way the previous lection, to 
+spandings html elements the next way
+*/
+
+/* .grid-item:first-child{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+} */
+
+/*
+And you eve could improve all of this more
+*/
+
+/* .grid-item:first-child{
+    grid-column: 1/span 2;
+    grid-row: 1/span 3;
+} */
+
+
+/* new ways to write: */
+
+/* .grid-item:nth-child(6){
+    grid-column: span 3;
+    grid-row: span 2;
+} */
+
+/*
+resuming: 
+*/
+
+.grid-item:nth-child(6){
+            /* rows  /  colums */
+    grid-area: span 2 / span 3;
+}
+
+/* To be more specific */
+
+/* .grid-item:nth-child(3){
+    row-start/column-start/row-end/column-end
+    grid-area: 1/2/1/2;
+} */
+
+.grid-item:hover{
+    opacity: .74;
+}
