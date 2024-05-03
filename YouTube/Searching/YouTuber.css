@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+body,div{
+    box-sizing: border-box;
+}
+
+.youTuber{
+    display: flex;
+    align-items: center;
+}
+
+.tuber-name,.palomita{ 
+    display: inline-block;
+}
+
+.palomita{
+    background-color: grey;
+    border-radius: 50%; 
+    margin: 1%; 
+    padding: 2px;
+}
+
+.img-youtuber{
+    border-radius: 50%;
+}
+
+.descriptions{
+    width: 45%;   
+    font-size: 12px;
+    padding: 0 5%; 
+}
+
+.suscribe-button{
+    font-family: 'Press Start 2P', sans-serif;
+    padding: 8px;
+    border-radius: 20px; 
+} 
+
+.tinker{
+    display: inline-block;
+}

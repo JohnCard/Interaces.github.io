@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+body,div{
+    box-sizing: border-box;
+}
+
+/* --- header --- */
+header{
+    display: flex;
+    width: 100%;
+  }
+  
+  /* --- Main icons --- */
+  
+  .icons{
+    display: flex;
+    height: 60px;
+    flex-grow: 2fr;
+    margin: 1% 1% 0;
+    justify-content: space-evenly;
+  }
+  
+  /* --- Main icons end --- */
+  
+  /* --- Search --- */
+  
+  .search{
+    display: flex;
+    margin: 1% auto;
+    flex-grow: 5fr;
+  }
+  
+  .search-text{
+    font-family: "Press Start 2P", sans-serif;
+    padding: 20px;
+    border-radius: 40px 0 0 40px;
+    width: 300px;
+    height: 15px;
+  }
+  
+  .lupa{
+    border-radius: 0 50% 50% 0;
+    height: 60px;
+  }
+  
+  .lupa-image{
+    width: 40px;
+    border-radius: 50%;
+  }
+  [alt="Microphone"]{
+    height: 20px;
+    margin: 6px 15px;
+    width: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #000;
+  }
+  
+  /* --- Search end --- */
+  
+  /* --- Final icons --- */
+  
+  .final-icons{
+    margin: 1%;
+    display: flex;
+    gap: 15px;
+    flex-grow: 2fr;
+  }
+  
+  .points{
+    align-self: center;
+    height: 40px;
+    width: 40px;
+  }
+  
+  /* --- Final icons end --- */
+  
+  /* --- header end --- */
+ 

@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+body,div{
+    box-sizing: border-box;
+}
+
+/* video */
+
+.video{
+    display: flex;
+    margin: 1%;
+}
+
+/* presentation */
+
+.presentation{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url('la-mancha.ico');
+    background-size: cover; 
+
+}
+
+.time{
+    position: absolute;
+    color: antiquewhite;
+    font-size: 10px; 
+    bottom: 10px;
+    right: 10px;
+    padding: 5px; 
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.278);
+}
+
+/* presentation */
+
+/* descriptions-video */
+
+.descriptions-video{
+    margin: 0 2%;
+}
+
+.video-title{
+    margin: 1% 0;
+}
+
+.views{
+    font-size: 10px;
+}
+
+/* youtuber-name */
+
+.youtuber-name{
+    margin: 1% 0 0;
+    display: flex;
+    align-items: center;
+    font-size: 15px; 
+}
+
+.python-image{
+    height: 30px;
+    margin: 0 1% 0 0;
+}
+
+.palomita{
+    background-color: grey;
+    border-radius: 50%; 
+    margin: 0 1%; 
+    padding: 3px;
+}
+
+/* youtuber-name */
+
+.description{ 
+    display: inline-block;
+    width: 75%; 
+    font-size: 10px;
+}
+
+.quality{
+    font-size: 10px;
+    background-color: lightsteelblue;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+/* descriptions-video */
+
+/* video */

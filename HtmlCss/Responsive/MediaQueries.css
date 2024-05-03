@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+body,div{
+    box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    background-color: #ccc;
+    padding: 30px;
+    border: 1px solid;
+    flex-grow: 1;
+    /* 
+    We don't have to use this properties if we wo to the @media screen selector: 
+    flex-basis: 0;
+    min-width: 300px; */
+
+}
+
+@media screen and (max-width:480px){
+    /* body{
+        font-size: 30px;
+        background-color: #000;
+        color: #fff;
+    } */
+    .flexbox{
+        flex-direction: column;
+    }
+}

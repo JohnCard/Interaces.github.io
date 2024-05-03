@@ -5,3 +5,36 @@ body{
 body,div{
     box-sizing: border-box;
 }
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.block{
+    display: inline-block;
+    min-width: 200px;
+    /* max-width: 200px; this could collapse against flex-grow, because won't let the div abjust */
+
+    /* This property it's not so recommendable, min-height could result a better choice!!!
+     height: 300px;  */
+
+    /* min-height: 300px; This one will abjust with our content*/
+    
+    background-color: #7bf;
+    
+    /* width: 100%; this one could collapse against the inline-block property */
+    
+    /* flex-grow: 1; this won't works without flex-basis */
+    
+    /* flex-basis: 0; */
+
+    flex: 1;
+    
+    font-size: 12px;
+    padding: 10px;
+    margin: 4px;
+}
